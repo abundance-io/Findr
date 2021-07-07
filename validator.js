@@ -1,5 +1,26 @@
 const Joi = require('@hapi/joi');
 
+const ProductCreateSchema = (json_string) =>{
+    const schema = Joi.object({
+        item_name:Joi.string()
+        .required(),
+
+        EAN:Joi.string()
+        .required(),
+
+        Keywords:Joi.array(),
+
+        description:Joi.string(),
+        category:Joi.string(),
+        brand:Joi.string(),
+
+
+    })
+
+    return schema.validate(json_string);
+
+}
+
 
 const LoginValidation = (json_string) => {
     const schema = Joi.object({
@@ -75,10 +96,10 @@ const schema = Joi.object({
     
 
 })
-return schema.validate(json_string)
+return schema.validate(json_string);
 };
 
-
+module.exports.ProductCreateSchema = ProductCreateSchema;
 module.exports.UserRegisterValidation = UserRegisterValidation;
 module.exports.LoginValidation = LoginValidation;
 module.exports.MarketRegisterValidation = MarketRegisterValidation;

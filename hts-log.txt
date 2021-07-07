@@ -1,0 +1,17 @@
+HTTrack3.49-2+libhtsjava.so.2 launched on Tue, 06 Jul 2021 21:00:05 at https://devcenter.heroku.com/articles/deploying-nodejs nodejsdeploy
+(httrack https://devcenter.heroku.com/articles/deploying-nodejs -o nodejsdeploy )
+
+Information, Warnings and Errors reported for this mirror:
+note:	the hts-log.txt file, and hts-cache folder, may contain sensitive information,
+	such as username/password authentication for websites mirrored in this project
+	do not share these files/folders if you want these information to remain private
+
+21:01:11	Error: 	"Unable to get server's address: unknown error" (-5) after 2 retries at link https://devcenter.heroku.com/robots.txt (from primary/primary)
+21:01:11	Warning: 	Retry after error -5 (Unable to get server's address: Name or service not known) at link https://devcenter.heroku.com/articles/deploying-nodejs (from primary/primary)
+21:01:21	Error: 	"Unable to get server's address: unknown error" (-5) after 2 retries at link nodejsdeploy/robots.txt (from primary/primary)
+21:01:21	Warning: 	Retry after error -5 (Unable to get server's address: Name or service not known) at link nodejsdeploy/ (from primary/primary)
+21:01:31	Warning: 	Retry after error -5 (Unable to get server's address: unknown error) at link https://devcenter.heroku.com/articles/deploying-nodejs (from primary/primary)
+21:01:51	Warning: 	Retry after error -5 (Unable to get server's address: unknown error) at link nodejsdeploy/ (from primary/primary)
+21:02:06	Error: 	"Unable to get server's address: unknown error" (-5) after 2 retries at link https://devcenter.heroku.com/articles/deploying-nodejs (from primary/primary)
+21:02:06	Error: 	"Unable to get server's address: unknown error" (-5) after 2 retries at link nodejsdeploy/ (from primary/primary)
+21:02:06	Warning: 	No data seems to have been transferred during this session! : restoring previous one!

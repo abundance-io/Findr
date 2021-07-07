@@ -1,4 +1,4 @@
-const mongoose = reuire('mongoose');
+const mongoose = require('mongoose');
 
 ProductSchema = mongoose.Schema({
 
@@ -28,18 +28,18 @@ ProductSchema = mongoose.Schema({
     },
     category: {
         type: String,
-        required: true
+        //required: true
     },
 
     brand:{
         type:String,
-        required: true
+        //required: true
         
 
     },
     series:{
         type:String,
-        required:true
+        //required:true
     },
 
 
@@ -50,6 +50,6 @@ ProductSchema = mongoose.Schema({
 
 
 
-product = mongoose.Model('product', ProductSchema);
+product = mongoose.model('product', ProductSchema);
 
-module.export = product 
+module.exports = product 
